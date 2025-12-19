@@ -1,0 +1,370 @@
+
+@media screen and (max-width: 320px){
+   .container{
+      margin-inline: 1rem;
+   }
+
+   .blob,
+   .home_image .blob-animate{
+      width: 220px;
+      height: 220px;
+   }
+
+   .projects_card{
+      padding-inline: 1rem;
+   }
+
+   .work_tabs{
+      padding-inline: 1rem;
+   }
+
+   .testimonials_card{
+      width: 250px;
+      padding-bottom: 2rem;
+   }
+}
+
+
+@media screen and (min-width: 540px){
+   .home_container{
+      width: 460px;
+      margin-inline: auto;
+   }
+
+   .about_container,
+   .work_container,
+   .services_container{
+      grid-template-columns: 460px;
+      justify-content: center;
+   }
+
+   .about_data,
+   .about_data .section_title{
+      text-align: center;
+   }
+
+   :is(.projects, .testimonials) .section_title{
+      text-align: center;
+      margin-left: 0;
+   }
+
+   .projects_card{
+      width: 350px;
+   }
+
+   .work_tabs{
+      width: 330px;
+      justify-self: center;
+   }
+}
+
+@media screen and (min-width: 768px){
+   .home_container{
+      width: 600px;
+   }
+
+   .work{
+      &_container{
+         grid-template-columns: 600px;
+      }
+      &_area{
+         padding-left: 0;
+      }
+      &_card{
+         grid-template-columns: repeat(2, 270px);
+         justify-content: center;
+         column-gap: 3rem;
+      }
+      &_line{
+         left: 0;
+         right: 0;
+         margin-inline: auto;
+      }
+   }
+
+   .services_container{
+      grid-template-columns: repeat(2, 350px);
+      align-items: flex-start;
+   }
+}
+
+
+@media screen and (min-width: 1150px){
+   .container{
+      margin-inline: auto;
+   }
+
+   .section{
+      padding-block: 7rem 2rem;
+
+      &_title{
+         margin-bottom: 4rem;
+      }
+   }
+
+   .blob{
+      width: 300px;
+      height: 300px;
+   }
+
+   .nav{
+      height: calc(var(--header-height) + 2rem);
+      align-items: center;
+
+      &_logo{
+         align-self: initial;
+      }
+      &_list{
+         flex-direction: row;
+         column-gap: 5.5rem;
+      }
+   }
+
+   .home{
+      &_container{
+         width: initial;
+         padding-top: 3rem;
+      }
+      &_perfil{
+         width: 600px;
+      }
+      &_image .blob-animate{
+         width: 450px;
+         height: 450px;
+         bottom: 2rem;
+         filter: blur(50px);
+      }
+      &_shadow{
+         width: 700px;
+         height: 700px;
+         left: 0;
+         right: 0;
+         margin-inline: auto;
+         background: linear-gradient(180deg, 
+            hsla(240, 100%, 2%, 0) 60%, 
+            hsl(240, 100%, 2%) 95%);
+      }
+      &_data{
+         position: absolute;
+         top: 12rem;
+         left: 3rem;
+         z-index: 2;
+      }
+      &_info{
+         top: 12rem;
+         right: 1rem;
+         bottom: initial;
+      }
+      &_split{
+         font-size: var(--h2-font-size);
+      }
+      &_profession-1{
+         font-size: var(--biggest-font-size);
+         text-align: initial;
+      }
+      &_profession-2{
+         font-size: var(--biggest-font-size);
+         transform: translateY(-1.5rem);
+      }
+      &_social{
+         bottom: 3rem;
+         row-gap: 1.5rem;
+
+         &-link{
+            font-size: 1.5rem;
+         }
+      }
+      &_cv{
+         font-size: var(--normal-font-size);
+         rotate: 0deg;
+         right: 0;
+      }
+   }
+
+   .about{
+      &_container{
+         grid-template-columns: repeat(2, 500px);
+         align-items: center;
+         column-gap: 5.5rem;
+         padding-top: 2rem;
+      }
+      &_data,
+      &_data .section_title{
+         text-align: initial;
+         z-index: 2;
+      }
+      &_description{
+         margin-bottom: 3rem;
+      }
+      &_perfil{
+         width: 500px;
+      }
+      &_image{
+         order: -1;
+
+         & .blob-animate{
+            width: 200px;
+            height: 200px;
+            filter: blur(50px);
+         }
+         & .blob-animate:nth-child(1){
+            left: 4rem;
+            top: 4rem;
+         }
+         & .blob-animate:nth-child(2){
+            right: -1rem;
+            bottom: 3rem;
+         }
+      }
+      &_shadow{
+         height: 600px;
+         bottom: 0;
+      }
+   }
+
+   .projects{
+      padding-block: 9rem 4rem;
+
+      &_swiper{
+         padding-bottom: 4rem;
+      }
+      &_container{
+         max-width: 1380px;
+      }
+      &_card{
+         width: 440px;
+         padding: 2.5rem;
+         border-radius: 4rem;
+      }
+      &_subtitle,
+      &_description{
+         font-size: var(--normal-font-size);
+      }
+      &_img{
+         border-radius: 2rem;
+      }
+      &_button{
+         top: 1.5rem;
+         right: 1.5rem;
+      }
+   }
+
+   .work{
+      &_container{
+         grid-template-columns: 1050px;
+         row-gap: 3rem;
+      }
+      &_content{
+         row-gap: 5rem;
+      }
+      &_card{
+         grid-template-columns: repeat(2, 450px);
+         column-gap: 9rem;
+      }
+      &_title{
+         font-size: var(--bigger-font-size);
+      }
+      &_subtitle,
+      &_description{
+         font-size: var(--h3-font-size);
+      }
+   }
+
+   .services{
+      &_container{
+         grid-template-columns: repeat(2, 455px);
+         column-gap: 5rem;
+      }
+      &_card{
+         padding: 3rem 3rem 4rem 3rem;
+         border-radius: 4rem;
+         row-gap: 2rem;
+      }
+      &_title{
+         font-size: var(--h1-font-size);
+         margin-bottom: 1rem;
+      }
+      &_button{
+         right: 2rem;
+         bottom: 2rem;
+      }
+   }
+
+   .testimonials{
+      &_container{
+         row-gap: 3rem;
+
+         &::after,
+         &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 20%;
+            height: 100%;
+         }
+         &::after{
+            left: 0;
+            background: linear-gradient(90deg,
+                      hsl(0, 0%, 0%) 0%,
+                      hsla(0, 0%, 0%, 0) 100%);
+         }
+         &::before{
+            right: 0;
+            z-index: 1;
+            background: linear-gradient(90deg,
+                      hsla(0, 0%, 0%, 0) 0%,
+                      hsl(0, 0%, 0%) 100%);
+         }
+      }
+      &_card{
+         width: 370px;
+         padding: 3rem 2rem;
+         border-radius: 4rem;
+      }
+      &_number{
+         font-size: var(--normal-font-size);
+      }
+   }
+
+   .contact{
+      padding-block: 9rem 4rem;
+      
+      &_container{
+         row-gap: 8rem;
+      }
+      &_description{
+         font-size: var(--h2-font-size);
+      }
+      &_content{
+         grid-template-columns: repeat(3, 1fr);
+      }
+      &_info{
+         row-gap: 1.5rem;
+         justify-self: flex-start;
+      }
+      &_write{
+         justify-self: flex-end;
+      }
+      &_title{
+         margin-bottom: .75rem;
+      }
+      &_links{
+         row-gap: .5rem;
+      }
+      &_link{
+         font-size: 1.25rem;
+      }
+   }
+}
+
+@media screen and (min-width: 2048px){
+   body{
+      zoom: 1.4;
+   }
+}
+
+@media (pointer: coarse) {
+   .cursor {
+      display: none;
+   }
+}
