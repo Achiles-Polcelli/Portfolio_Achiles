@@ -503,6 +503,10 @@ img {
   border-radius: 1.5rem;
 }
 
+.projects_img2 {
+  border-radius: 1.5rem;
+}
+
 .projects_button {
   display: grid;
   place-items: center;
@@ -1104,6 +1108,12 @@ img {
   }
   .projects_img {
     border-radius: 2rem;
+  }
+
+  .projects_img2 {
+    border-radius: 2rem;
+    position: relative;
+    top: 1rem;
   }
   .projects_button {
     top: 1.5rem;
