@@ -1,0 +1,25 @@
+
+.footer{
+   position: relative;
+   padding-block: 4rem 2rem;
+   text-align: center;
+   row-gap: 1rem;
+   overflow: hidden;
+
+   & .blob-animate{
+      right: -3rem;
+      bottom: -3rem;
+   }
+   &_copy{
+      color: var(--title-color);
+
+      & span{
+         color: var(--first-color);
+      }
+   }
+   &_year{
+      & span{
+         font-family: var(--second-font);
+      }
+   }
+}

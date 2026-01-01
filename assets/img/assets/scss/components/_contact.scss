@@ -1,0 +1,64 @@
+
+.contact{
+   &_container{
+      row-gap: 4rem;
+      padding-bottom: 2rem;
+   }
+   & .section_title{
+      margin-bottom: 1rem;
+   }
+   &_data{
+      text-align: center;
+   }
+   &_description{
+      font-family: var(--second-font);
+      margin-bottom: 1.5rem;
+   }
+   &_email{
+      display: none;
+   }
+   &_button{
+      cursor: pointer;
+   }
+   &_content{
+      row-gap: 3rem;
+   }
+   &_info{
+      row-gap: 1rem;
+   }
+   &_title{
+      font-size: var(--h3-font-size);
+      color: var(--first-color);
+      text-align: center;
+      margin-bottom: .5rem;
+   }
+   &_address{
+      color: var(--title-color);
+      font-style: normal;
+      font-weight: var(--font-medium);
+      text-align: center;
+   }
+   &_links{
+      display: grid;
+      grid-template-columns: max-content;
+      justify-content: center;
+      row-gap: .25rem;
+   }
+   &_link{
+      color: var(--title-color);
+      font-weight: var(--font-medium);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: .5rem;
+      transition: transform .4s, color .4s;
+
+      & i{
+         font-size: 1.5rem;
+      }
+      &:hover{
+         transform: translateX(.35rem);
+         color: var(--text-color);
+      }
+   }
+}
