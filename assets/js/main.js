@@ -1,3 +1,12 @@
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText)
+
+ScrollSmoother.create({
+  smooth: 1.5,
+  effects: true,
+  ignoreMobileResize: true,
+  normalizeScroll: false,
+})
+
 /* home */
 const{ animate, stagger, text } = anime
  
@@ -33,7 +42,7 @@ const swiperProjects = new Swiper('.projects_swiper', {
    slidesPerView: 'auto',
    grabCursor: true,
    speed: 600,
-
+   touchStartPreventDefault: false,
    pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -145,3 +154,31 @@ sr.reveal(`.home_social, .home_cv`, {delay: 1500})
 sr.reveal(`.about_data`, {origin: 'left'})
 sr.reveal(`.about_image`, {origin: 'right'})
 sr.reveal(`.services_card`, {interval: 100})
+
+
+// preloader
+
+const tl = gsap.timeline({
+  onComplete() {
+    gsap.to("#preloader", {
+      opacity: 0,
+      onComplete() {
+        gsap.to("#preloader", {
+          opacity: 0,
+          display: "none",
+        });
+      },
+    });
+  },
+});
+
+tl.to("#preloader path", {
+  duration: 1.2,
+  strokeDashoffset: 0,
+});
+
+tl.to("#preloader path", {
+  fill: "var(--text-color)",
+  duration: 1.5,
+  strokeDashoffset: 0,
+});
