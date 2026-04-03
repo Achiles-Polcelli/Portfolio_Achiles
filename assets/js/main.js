@@ -173,7 +173,7 @@ const tl = gsap.timeline({
 });
 
 tl.to("#preloader path", {
-  duration: 1.2,
+  duration: 1.6,
   strokeDashoffset: 0,
 });
 
