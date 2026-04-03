@@ -1223,8 +1223,8 @@ img {
     height: auto;
   
     path {
-      fill: var(--first-color);
-      stroke: var(--first-color-alt);
+      fill: rgb(192, 177, 236);
+      stroke: rgb(65, 5, 245);
       stroke-dasharray: 220;
       stroke-dashoffset: 220;
     }
