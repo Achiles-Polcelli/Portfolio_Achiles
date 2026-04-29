@@ -103,10 +103,10 @@ const copyBtn = document.getElementById('contact-btn'),
 
 copyBtn.addEventListener('click', () => {
    navigator.clipboard.writeText(copyEmail).then(() => {
-      copyBtn.innerHTML = 'Email copied <i class="ri-check-line"></i>'
+      copyBtn.innerHTML = 'Email copiado <i class="ri-check-line"></i>'
 
       setTimeout(() => {
-         copyBtn.innerHTML = 'Copy email <i class="ri-file-copy-line"></i>'
+         copyBtn.innerHTML = 'Copiar email <i class="ri-file-copy-line"></i>'
       }, 2000)
    })
 })
